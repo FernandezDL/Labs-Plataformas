@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/h14Line"
+        app:layout_constraintEnd_toEndOf="@id/vMiddleLine"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/Direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/direction"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/h14Line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Restaurant"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/visit"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink2"
+        android:text="@string/visit"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/h14Line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Direction"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <ImageView
+        android:id="@+id/grayRec"
+        android:layout_width="430dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toBottomOf="@id/h34Line"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/h14Line"
+        app:layout_constraintVertical_bias="0.234"
+        app:srcCompat="@drawable/gray2"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/additionalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/additionalInfo"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/h34Line"
+        app:layout_constraintStart_toEndOf="@id/v34Line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grayRec"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/serviceHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="@string/serviceHours"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/h34Line"
+        app:layout_constraintEnd_toEndOf="@id/vMiddleLine"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additionalInfo"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/reloj_de_pared"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additionalInfo"
+        app:layout_constraintEnd_toStartOf="@id/serviceHours"
+        app:layout_constraintBottom_toBottomOf="@id/h34Line"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/opening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="@string/opening"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/h34Line"
+        app:layout_constraintEnd_toEndOf="@id/vMiddleLine"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceHours"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/phoneImg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toBottomOf="@id/h45Line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/h34Line"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/llamada_telefonica" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/phone"
+
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@id/number"
+        app:layout_constraintEnd_toEndOf="@id/vMiddleLine"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/phoneImg"
+        app:layout_constraintTop_toTopOf="@id/serviceHours" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/number"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+
+        app:layout_constraintEnd_toEndOf="@id/vMiddleLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/phoneImg"
+        app:layout_constraintTop_toBottomOf="@id/phone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vMiddleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hMiddleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="374dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h14Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="192dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v34Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="311dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h34Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="522dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h45Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="631dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

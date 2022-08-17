@@ -14,4 +14,12 @@
 
     <string name="start">Inicio</string>
     <string name="details">Detalles</string>
+    
+    <string name="visit">Iniciar visita</string>
+    
+    <string name="additionalInfo">Información adicional</string>
+    <string name="serviceHours">Horario de atención</string>
+    <string name="phone">Teléfono</string>
+    <string name="number">2292-5151</string>
+    <string name="call">Llamar</string>
 </resources>
