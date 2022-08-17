@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="domingo2">Domingo</string>
+
+    <string name="actualizar">Actualización disponible</string>
+    <string name="fecha">31 de julio</string>
+    <string name="boton">Terminar jornada</string>
+    <string name="descargar">Descargar</string>
+    <string name="descripcion">descripcionX</string>
+
+    <string name="restaurant">Denny´s</string>
+    <string name="direction">C.C. Paseo Liberación - Zona 9 - Guatemala</string>
+    <string name="opening">Abierto 24 horas</string>
+
+    <string name="start">Inicio</string>
+    <string name="details">Detalles</string>
+</resources>
